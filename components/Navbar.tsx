@@ -28,7 +28,7 @@ const Navbar: React.FC<NavbarProps> = ({
         >
           <div className="w-10 h-10 flex items-center justify-center">
             <img
-              src="../resources/logo-transparan-putih.png"
+              src=""
               alt="SSI Logo"
               className="w-full h-full object-contain"
             />
