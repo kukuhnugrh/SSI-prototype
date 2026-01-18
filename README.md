@@ -1,20 +1,44 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# SSI – B2B Premium Seating
 
-# Run and deploy your AI Studio app
+A modern, responsive **B2B product showcase website** for premium office seating solutions.  
+Built as a **frontend-only web application** using **React + Vite + TypeScript**.
 
-This contains everything you need to run your app locally.
+---
 
-View your app in AI Studio: https://ai.studio/apps/drive/1YwXb1kYv7pshb1ualaAMgGm3ydFrV2i9
+## ✨ Features
 
-## Run Locally
+- 🪑 Product catalog for premium office seating
+- 🧩 Modular and reusable React components
+- ⚡ Fast development & build with Vite
+- 📱 Responsive layout (desktop & mobile)
+- 🟦 Fully typed with TypeScript
+- 🌐 Ready for static hosting (GitHub Pages)
 
-**Prerequisites:**  Node.js
+---
 
+## 🛠 Tech Stack
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **React**
+- **Vite**
+- **TypeScript**
+- **HTML5 / CSS**
+- **npm**
+
+---
+
+## 📂 Project Structure
+
+```text
+SSI---B2B-PREMIUM-SEATING/
+├─ components/        # Reusable UI components
+├─ resources/         # Images & static assets
+├─ App.tsx            # Main app component
+├─ index.tsx          # App entry point
+├─ index.html         # HTML template
+├─ constants.tsx      # App constants
+├─ types.ts           # Shared TypeScript types
+├─ vite.config.ts     # Vite configuration
+├─ tsconfig.json      # TypeScript config
+├─ package.json       # Project metadata & scripts
+└─ README.md
+```
