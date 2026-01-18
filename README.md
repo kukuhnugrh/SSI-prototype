@@ -1,18 +1,18 @@
-# SSI – B2B Premium Seating
+# SSI Prototype
 
-A modern, responsive **B2B product showcase website** for premium office seating solutions.  
-Built as a **frontend-only web application** using **React + Vite + TypeScript**.
+A modern **frontend-only prototype** for a **B2B premium seating** website.  
+This project serves as a UI/UX and frontend implementation prototype built with **React, Vite, and TypeScript**.
 
 ---
 
 ## ✨ Features
 
-- 🪑 Product catalog for premium office seating
-- 🧩 Modular and reusable React components
-- ⚡ Fast development & build with Vite
-- 📱 Responsive layout (desktop & mobile)
-- 🟦 Fully typed with TypeScript
-- 🌐 Ready for static hosting (GitHub Pages)
+- 🪑 B2B premium seating product showcase
+- ⚛️ Component-based React architecture
+- ⚡ Fast development & build using Vite
+- 🟦 Strong typing with TypeScript
+- 📱 Responsive layout
+- 🌐 Static-site ready (GitHub Pages)
 
 ---
 
@@ -29,16 +29,16 @@ Built as a **frontend-only web application** using **React + Vite + TypeScript**
 ## 📂 Project Structure
 
 ```text
-SSI---B2B-PREMIUM-SEATING/
+SSI-prototype/
 ├─ components/        # Reusable UI components
-├─ resources/         # Images & static assets
-├─ App.tsx            # Main app component
-├─ index.tsx          # App entry point
+├─ resources/         # Images and static assets
+├─ App.tsx            # Root application component
+├─ index.tsx          # Application entry point
 ├─ index.html         # HTML template
-├─ constants.tsx      # App constants
+├─ constants.tsx      # Shared constants
 ├─ types.ts           # Shared TypeScript types
 ├─ vite.config.ts     # Vite configuration
-├─ tsconfig.json      # TypeScript config
-├─ package.json       # Project metadata & scripts
+├─ tsconfig.json      # TypeScript configuration
+├─ package.json       # Project scripts & dependencies
 └─ README.md
 ```
