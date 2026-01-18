@@ -1,24 +1,25 @@
 import React from "react";
+import logo from "../resources/images/logo-transparan-putih.png";
 
 interface NavbarProps {
   isScrolled: boolean;
   onAdminClick: () => void;
   onHomeClick: () => void;
-  onProductsClick: () => void;
+  onKatalogClick: () => void;
 }
 
 const Navbar: React.FC<NavbarProps> = ({
   isScrolled,
   onAdminClick,
   onHomeClick,
-  onProductsClick,
+  onKatalogClick,
 }) => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         isScrolled
-          ? "glass py-4 shadow-sm border-b border-slate-200/50"
-          : "bg-transparent py-6"
+          ? "glass py-3 shadow-sm border-b border-slate-200/50"
+          : "bg-transparent py-5"
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -28,7 +29,7 @@ const Navbar: React.FC<NavbarProps> = ({
         >
           <div className="w-10 h-10 flex items-center justify-center">
             <img
-              src=""
+              src={logo}
               alt="SSI Logo"
               className="w-full h-full object-contain"
             />
@@ -40,30 +41,30 @@ const Navbar: React.FC<NavbarProps> = ({
           </span>
         </button>
 
-        <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+        <div className="flex items-center gap-6 md:gap-8 text-sm font-medium text-slate-600">
           <button
             onClick={onHomeClick}
-            className="hover:text-blue-600 transition-colors"
+            className="hover:text-blue-600 transition-colors hidden sm:block"
           >
             Beranda
           </button>
           <button
-            onClick={onProductsClick}
-            className="hover:text-blue-600 transition-colors"
+            onClick={onKatalogClick}
+            className="hover:text-blue-600 transition-colors font-bold text-slate-900"
           >
-            Produk
+            Katalog
           </button>
           <button
             onClick={onAdminClick}
-            className="text-slate-500 hover:text-blue-600 text-xs font-bold uppercase tracking-widest px-3 py-1 border border-slate-200 rounded-md"
+            className="text-slate-400 hover:text-blue-600 text-xs font-bold uppercase tracking-widest px-3 py-1.5 border border-slate-200 rounded-lg hidden md:block"
           >
             Admin
           </button>
           <a
             href="#contact"
-            className="bg-blue-600 text-white px-5 py-2.5 rounded-full hover:bg-blue-700 transition-all shadow-lg shadow-blue-200"
+            className="bg-slate-900 text-white px-5 py-2.5 rounded-xl hover:bg-blue-600 transition-all shadow-lg shadow-slate-200 text-xs font-bold uppercase tracking-wider"
           >
-            Hubungi Kami
+            Kontak
           </a>
         </div>
       </div>
